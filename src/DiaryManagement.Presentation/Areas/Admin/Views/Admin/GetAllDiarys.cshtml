@@ -1,0 +1,75 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<DiaryManagement.Core.Entities.Diary>;
+@{
+
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Diary";
+    int order = 0;
+    var parms = new Dictionary<string, string>();
+    parms.Add("DiaryId", "");
+    var WriterDiary = "";
+}
+
+<div class="col">
+    <a class="btn btn-outline-light rounded mb-3" role="button" asp-area="Admin" asp-controller="Admin"
+        asp-action="AddDiary">
+        Add Diary
+    </a>
+    <div class="card">
+        <div class="card-header">
+            <strong class="card-title">Diaries List</strong>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#No</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Kind</th>
+                        <th scope="col">Writer</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Views</th>
+                        <th scope="col">Creation Date</th>
+                        <th scope="col">Latest Edited</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var Diary in Model)
+                    {
+                        foreach (var ab in Diary.WriterDiarys)
+                        {
+                            WriterDiary += $"{ab.Writer.WriterName}, ";
+                        }
+                        WriterDiary = WriterDiary.Remove(WriterDiary.Length - 2);
+                        order++;
+                        parms["DiaryId"] = Diary.DiaryId;
+                        <tr>
+                            <th scope="row">@order</th>
+                            <td>@Diary.DiaryName</td>
+                            <td>@Diary.Category.CategoryName</td>
+                            <td>@WriterDiary</td>
+                            <td><img width="70px" src="@Diary.Image" alt="DiaryImage"></img></td>
+                            <td>@Diary.Content</td>
+                            <td>@Diary.ViewCount</td>
+                            <td>@Diary.CreationDate.GetDateTimeFormats()[1]</td>
+                            <td>@Diary.LatestUpdate.GetDateTimeFormats()[1]</td>
+                            <td>
+                                <a class="btn btn-outline-success rounded mb-1" role="button" asp-area="Admin"
+                                    asp-controller="Admin" asp-action="EditDiary" asp-all-route-data="parms">
+                                    Edit
+                                </a>
+                                <a class="btn btn-outline-danger rounded" role="button" asp-area="Admin"
+                                    asp-controller="Admin" asp-action="RemoveDiary" asp-all-route-data="parms">
+                                    Remove
+                                </a>
+                            </td>
+                        </tr>
+                        WriterDiary = "";
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Dashboard";
+}
+<div class="breadcrumbs">
+    <div class="col-sm-4">
+        <div class="page-header float-left">
+            <div class="page-title">
+                <h1>Dashboard</h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="page-header float-right">
+            <div class="page-title">
+                <ol class="breadcrumb text-right">
+                    
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content mt-3">
+
+   
+
+
+    <div class="col-sm-6 col-lg-3">
+        <div class="card text-white  bg-warning bg-gradient">
+            <div class="card-body pb-0">
+                <h4 class="mb-0">
+                    <span class="count">@ViewData["TotalUser"]</span>
+                </h4>
+                <p class="text-light">Accounts</p>
+
+                <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                    <canvas id="widgetChart1"></canvas>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--/.col-->
+
+    <div class="col-sm-6 col-lg-3">
+        <div class="card text-white bg-secondary bg-gradient">
+            <div class="card-body pb-0">
+                
+                <h4 class="mb-0">
+                    <span class="count">@ViewData["TotalDiary"]</span>
+                </h4>
+                <p class="text-light">Diarys</p>
+
+                <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                    <canvas id="widgetChart2"></canvas>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--/.col-->
+
+    <div class="col-sm-6 col-lg-3">
+        <div class="card text-white  bg-success bg-gradient">
+            <div class="card-body pb-0">
+                
+                <h4 class="mb-0">
+                    <span class="count">@ViewData["TotalWriter"]</span>
+                </h4>
+                <p class="text-light">Writers</p>
+
+            </div>
+
+            <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                <canvas id="widgetChart3"></canvas>
+            </div>
+        </div>
+    </div>
+    <!--/.col-->
+
+    <div class="col-sm-6 col-lg-3">
+        <div class="card text-white bg-danger bg-gradient">
+            <div class="card-body pb-0">
+                
+                <h4 class="mb-0">
+                    <span class="count">@ViewData["TotalCategory"]</span>
+                </h4>
+                <p class="text-light">Categories </p>
+
+                <div class="chart-wrapper px-3" style="height:70px;" height="70">
+                    <canvas id="widgetChart4"></canvas>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+
+
+</div><!-- /#right-panel -->
+<!-- Right Panel -->

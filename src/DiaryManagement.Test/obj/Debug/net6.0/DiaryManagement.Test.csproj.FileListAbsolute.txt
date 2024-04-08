@@ -1,0 +1,12 @@
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/bin/Debug/net6.0/DiaryManagement.Test.deps.json
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/bin/Debug/net6.0/DiaryManagement.Test.dll
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/bin/Debug/net6.0/DiaryManagement.Test.pdb
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/obj/Debug/net6.0/DiaryManagement.Test.csproj.AssemblyReference.cache
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/obj/Debug/net6.0/DiaryManagement.Test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/obj/Debug/net6.0/DiaryManagement.Test.AssemblyInfoInputs.cache
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/obj/Debug/net6.0/DiaryManagement.Test.AssemblyInfo.cs
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/obj/Debug/net6.0/DiaryManagement.Test.csproj.CoreCompileInputs.cache
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/obj/Debug/net6.0/DiaryManagement.Test.dll
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/obj/Debug/net6.0/refint/DiaryManagement.Test.dll
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/obj/Debug/net6.0/DiaryManagement.Test.pdb
+/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/obj/Debug/net6.0/ref/DiaryManagement.Test.dll

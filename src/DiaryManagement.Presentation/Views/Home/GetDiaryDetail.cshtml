@@ -1,0 +1,38 @@
+﻿@using DiaryManagement.Core.Entities;
+@model DiaryManagement.Core.Entities.Diary
+@{
+    ViewData["Title"] = "Diary Detail";
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+    string DiaryStatus = Model.ViewCount != null ? "Online Available" : "Not Available";
+    var parms = new Dictionary<string, string>();
+}
+<link href="/css/Diary-details/style.css" rel="stylesheet">
+<div class="container">
+    <div class="left-column mr-5 mt-5">
+        <img class="active" height="100%" src="@Model?.Image" alt="DiaryImage">
+    </div>
+
+
+    <div class="right-column">
+
+        <div class="product-description">
+            <span>@Model.Category.CategoryName</span>
+            <h1>@Model.DiaryName</h1>
+            <p>@Model.Content</p>
+        </div>
+
+        <div class="product-configuration">
+            @{
+                string WriterDiary = "";
+                foreach (var ab in Model.WriterDiarys)
+                {
+                    WriterDiary += $"{ab.Writer.WriterName}, ";
+                }
+                WriterDiary = WriterDiary.Remove(WriterDiary.Length - 2);
+            }
+                <span><strong>Writer: </strong>@WriterDiary</span> <br />
+                <span><strong>Number of Views: </strong>@Model.ViewCount</span> <br />
+            </div>
+        </div>
+    </div>
+</div>

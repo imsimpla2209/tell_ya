@@ -1,0 +1,206 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Infrastructure/DiaryManagement.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Core/DiaryManagement.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Core/DiaryManagement.Core.csproj",
+        "projectName": "DiaryManagement.Core",
+        "projectPath": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Core/DiaryManagement.Core.csproj",
+        "packagesPath": "/Users/nguyenhuyhoang/.nuget/packages/",
+        "outputPath": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyenhuyhoang/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Infrastructure/DiaryManagement.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Infrastructure/DiaryManagement.Infrastructure.csproj",
+        "projectName": "DiaryManagement.Infrastructure",
+        "projectPath": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Infrastructure/DiaryManagement.Infrastructure.csproj",
+        "packagesPath": "/Users/nguyenhuyhoang/.nuget/packages/",
+        "outputPath": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyenhuyhoang/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Core/DiaryManagement.Core.csproj": {
+                "projectPath": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Core/DiaryManagement.Core.csproj"
+              },
+              "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/DiaryManagement.Test.csproj": {
+                "projectPath": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/DiaryManagement.Test.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.19, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/DiaryManagement.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/DiaryManagement.Test.csproj",
+        "projectName": "DiaryManagement.Test",
+        "projectPath": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/DiaryManagement.Test.csproj",
+        "packagesPath": "/Users/nguyenhuyhoang/.nuget/packages/",
+        "outputPath": "/Users/nguyenhuyhoang/Documents/Glass/Diary/src/DiaryManagement.Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyenhuyhoang/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

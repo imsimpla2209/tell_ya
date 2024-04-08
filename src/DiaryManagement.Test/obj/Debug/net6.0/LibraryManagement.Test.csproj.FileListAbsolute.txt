@@ -1,0 +1,12 @@
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\bin\Debug\net6.0\DiaryManagement.Test.deps.json
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\bin\Debug\net6.0\DiaryManagement.Test.dll
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\bin\Debug\net6.0\DiaryManagement.Test.pdb
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\obj\Debug\net6.0\DiaryManagement.Test.csproj.AssemblyReference.cache
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\obj\Debug\net6.0\DiaryManagement.Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\obj\Debug\net6.0\DiaryManagement.Test.AssemblyInfoInputs.cache
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\obj\Debug\net6.0\DiaryManagement.Test.AssemblyInfo.cs
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\obj\Debug\net6.0\DiaryManagement.Test.csproj.CoreCompileInputs.cache
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\obj\Debug\net6.0\DiaryManagement.Test.dll
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\obj\Debug\net6.0\refint\DiaryManagement.Test.dll
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\obj\Debug\net6.0\DiaryManagement.Test.pdb
+D:\.NashTech\Final\DiaryManagement\src\DiaryManagement.Test\obj\Debug\net6.0\ref\DiaryManagement.Test.dll

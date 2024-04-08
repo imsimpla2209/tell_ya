@@ -1,0 +1,69 @@
+﻿@using DiaryManagement.Core.Entities;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model DiaryManagement.Application.Dtos.DiaryDto;
+@{
+
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Add Diary";
+    var categories = (List<Category>)ViewData["Categories"]!;
+    var Writers = (List<Writer>)ViewData["Writers"]!;
+}
+
+
+
+<div class="row justify-content-center mt-5">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header text-center">
+                <h3>Add new Diary</h3>
+            </div>
+            <span class="text-danger">@ViewBag.AddDiaryMsg</span>
+            <form class="card-body card-block" method="post" asp-area="Admin" asp-controller="Admin"
+                asp-action="AddDiary" enctype="multipart/form-data">
+                <div class="has-success form-group">
+                    <label for="inputSuccess2i" class=" form-control-label"><strong>Diary Name:</strong></label>
+                    <input asp-for="DiaryName" type="text" id="inputSuccess2i" placeholder="input...."
+                        class="form-control-success form-control">
+                    <span class="text-danger" asp-validation-for="DiaryName"></span>
+                </div>
+                <div class="has-success form-group">
+                    <label for="inputSuccess2i" class=" form-control-label"><strong>Category:</strong></label>
+                    <select asp-for="CategoryId">
+                        @foreach (var c in categories)
+                        {
+                            <option value="@c.CategoryId">@c.CategoryName</option>
+                        }
+                    </select>
+                </div>
+                <div class="has-success form-group">
+                    <label for="inputSuccess2i" class=" form-control-label"><strong>Writer:</strong></label> <br />
+                    <select class="col-6" asp-for="WriterId" multiple>
+                        @foreach (var a in Writers)
+                        {
+                            <option value="@a.WriterId">@a.WriterName</option>
+                        }
+                    </select> <br />
+                    <span class="text-danger" asp-validation-for="WriterId"></span>
+                </div>
+                <div class="has-success form-group">
+                    <label for="inputSuccess2i" class=" form-control-label"><strong>Content:</strong></label>
+                    <input asp-for="Content" type="text" id="inputSuccess2i" placeholder="input...."
+                        class="form-control-success form-control">
+                    <span class="text-danger" asp-validation-for="Content"></span>
+                </div>
+                <div class="has-success form-group">
+                    <label for="inputSuccess2i" class=" form-control-label"><strong>Thumbnail:</strong></label>
+                    <input name="Image" type="file" id="inputSuccess2i" class="form-control-success form-control">
+                    <span class="text-danger" asp-validation-for="Image"></span>
+                </div>
+
+                <div class="text-center">
+                    <!-- Center the button -->
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        <i class="fa fa-dot-circle-o"></i> Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<DiaryManagement.Core.Entities.Writer>;
+@{
+
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Writer";
+    int order = 0;
+    var parms = new Dictionary<string, string>();
+    parms.Add("WriterId", "");
+
+}
+
+<div class="col">
+    <a class="btn btn-outline-primary rounded mb-3" role="button" asp-area="Admin" asp-controller="Admin"
+        asp-action="AddWriter">
+        Add new Writer
+    </a>
+    <div class="card">
+        <div class="card-header">
+            <strong class="card-title">All Writers</strong>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Writer name</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var Writer in Model)
+                    {
+                        order++;
+                        parms["WriterId"] = Writer.WriterId;
+                        <tr>
+                            <th scope="row">@order</th>
+                            <td>@Writer.WriterName</td>
+                            <td>
+                                <a class="btn btn-outline-success rounded" role="button" asp-area="Admin"
+                                    asp-controller="Admin" asp-action="EditWriter" asp-all-route-data="parms">
+                                    Edit
+                                </a>
+                                <a class="btn btn-outline-danger rounded" role="button" asp-area="Admin"
+                                    asp-controller="Admin" asp-action="RemoveWriter" asp-all-route-data="parms">
+                                    Remove
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
